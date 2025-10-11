@@ -8,6 +8,9 @@ Este proyecto fue construido principalmente con:
 |:-----:|:----:|:----------:|:-----------:|:-----:|
 | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="40"/> | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="40"/> | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="40"/> | <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/512px-Tailwind_CSS_Logo.svg.png" width="40"/> | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" width="40"/> |
 
+## ⛓️‍💥 Demo online
+https://van1n.github.io/proyecto_portafolio/
+
 
 ## 🖥️ Ejecutar localmente
 
