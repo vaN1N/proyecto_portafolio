@@ -4,13 +4,12 @@
 
 Este proyecto fue construido principalmente con:
 
-- **HTML5** – estructura del sitio  
-- **CSS3** – estilos y diseño visual  
-- **JavaScript** – interactividad y lógica  
-- **TailwindCSS** – utilidades modernas para diseño responsivo  
-- **Figma** – diseño de interfaces y prototipos
+## 🛠️ Tecnologías utilizadas
 
-## 🔗 Demo en línea
+| HTML5 | CSS3 | JavaScript | TailwindCSS | Figma |
+|:-----:|:----:|:----------:|:-----------:|:-----:|
+| <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="40"/> | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="40"/> | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="40"/> | <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/512px-Tailwind_CSS_Logo.svg.png" width="40"/> | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" width="40"/> |
+
 
 ## 🖥️ Ejecutar localmente
 
