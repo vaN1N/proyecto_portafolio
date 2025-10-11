@@ -25,7 +25,7 @@ cd portafolio
 Si deseas saber más sobre mi trabajo o colaborar en algún proyecto, no dudes en contactarme:
 
 - Email: ivnabro@gmail.com
-- LinkedIn: linkedin.com/in/ivannaranjo1
+- LinkedIn: https://www.linkedin.com/in/ivannaranjo1
 ---
 
 Gracias por visitar mi portafolio 🚀
