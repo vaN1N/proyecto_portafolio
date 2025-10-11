@@ -19,7 +19,7 @@ Clona el repositorio y abre el proyecto en tu navegador:
 ```bash
 git clone https://github.com/vaN1N/proyecto_portafolio.git
 cd portafolio
-
+```
 ## 📫 Contacto
 
 Si deseas saber más sobre mi trabajo o colaborar en algún proyecto, no dudes en contactarme:
