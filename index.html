@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect" />
+
+    <!--Metas-->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio personal con proyectos de desarrollo web, aplicaciones y diseño, mostrando habilidades técnicas y creatividad.">
+    <meta name="keywords" content="portafolio,cv,ivan">
+    <meta name="author" content="Ivan Naranjo">
+
+    <!-- SEO y rastreo -->
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="es">
+    <meta name="distribution" content="global">
+
+    <!-- Redes sociales-->
+    <meta property="og:title" content="Portafolio Iván naranjo">
+    <meta property="og:description" content="Portafolio de Ivan Naranjo">
+
+    <!-- Favicon y tema -->
+    <meta name="theme-color" content="#ffffff">
+    <link rel="icon" href="./sources/img/favicon.png" type="image/x-icon">
+
+    
+
+<!--Titulo de la pagina-->
+<title>Portafolio Ivan Naranjo</title>
+<link as="style"
+    href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+    onload="this.rel='stylesheet'" rel="stylesheet" />
+
+<!--Linkado de tailwindcss-->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+    darkMode: "class",
+    theme: {
+        extend: {
+        colors: {
+            primary: "#1773cf",
+            "background-light": "#f6f7f8",
+            "background-dark": "#111921",
+        },
+        fontFamily: {
+            display: ["Inter"],
+        },
+        borderRadius: {
+            DEFAULT: "0.25rem",
+            lg: "0.5rem",
+            xl: "0.75rem",
+            full: "9999px"
+        },
+        },
+    },
+    };
+</script>
+
+<!--Fuente-->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+<!--Simbolos importados de google-->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+<style>
+    .card {
+        /* width: 80%; */
+        /* max-width: 600px; */
+        /* background: white; */
+        /* border-radius: 12px; */
+        /* box-shadow: 0 2px 5px rgba(0,0,0,0.1); */
+        padding: 1rem 1rem 1rem 1rem;
+        /* text-align: center; */
+        cursor: pointer;
+        transition: all 0.25s ease;
+    }
+
+    /* efecto de hover */
+    .card:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px);
+    }
+</style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200">
+    <script src="sources/js/tema.js"></script>
+    <div class="flex flex-col min-h-screen">
+        <header class="sticky top-0 z-10 w-full bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm border-b border-gray-200 dark:border-gray-700">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex h-16 items-center justify-between">
+                    <div class="flex items-center gap-4">
+                        <svg class="h-6 w-6 text-primary" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+
+                        </svg>
+                    <h1 class="text-xl font-bold text-gray-900 dark:text-white">Iván Naranjo Broceño</h1>
+                </div>
+
+                <!--Menu principal-->
+                <div class="flex items-center gap-4">
+                    <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
+                        <a class="hover:text-primary transition-colors" href="#about">Sobre mi</a>
+                        <a class="hover:text-primary transition-colors" href="#experience">Experiencia</a>
+                        <a class="hover:text-primary transition-colors" href="#skills">Skills</a>
+                        <a class="hover:text-primary transition-colors" href="#projects">Proyectos</a>
+                        <a class="hover:text-primary transition-colors" href="#contact">Contacto</a>
+                    </nav>
+                        <!--Boton para idioma-->
+                        <button onclick="alert('La versión en ingles esta en proceso.')">
+                            <span class="material-symbols-outlined"> language </span>
+                        </button>
+
+                        <!--Boton para cambiar tema-->
+                        <button id="theme-toggle" class="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors" onclick="document.documentElement.classList.toggle('dark')">
+                            <span class="material-symbols-outlined text-gray-600 dark:text-gray-300">dark_mode</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+    <main class="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="max-w-4xl mx-auto space-y-16">
+            <section class="text-center" ><!--Presentacion(ln,git,email)-->
+                <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full w-32 h-32 mx-auto mb-4"
+                    style='background-image: url("./sources/img/yo.jpg");'></div>
+
+                <h2 class="text-4xl font-bold text-gray-900 dark:text-white">Iván Naranjo Broceño</h2>
+                <p class="text-lg text-gray-600 dark:text-gray-400 mt-1">Desarrollador Web</p>
+
+                <div class="mt-4 flex flex-wrap justify-center gap-x-4 gap-y-2 text-sm text-gray-600 dark:text-gray-400">
+                    <span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-base">location_on</span>
+                    Ciudad Real, Spain</span>
+                    <a class="flex items-center gap-1.5 hover:text-primary" href="mailto:davidcuevascarrasco10@gmail.com"><span
+                        class="material-symbols-outlined text-base">mail</span> ivnabro@gmail.com</a>
+                    <a class="flex items-center gap-1.5 hover:text-primary" href="https://www.linkedin.com/in/ivannaranjo1/"
+                    rel="noopener noreferrer" target="_blank">
+                    <svg aria-hidden="true" class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                        <path clip-rule="evenodd"
+                        d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+                        fill-rule="evenodd"></path>
+                    </svg>
+                    linkedin.com/in/ivannaranjo1/
+                    </a>
+                    <a class="flex items-center gap-1.5 hover:text-primary" href="https://github.com/vaN1N"
+                        rel="noopener noreferrer" target="_blank">
+                    <svg aria-hidden="true" class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                        <path clip-rule="evenodd"
+                            d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.165 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.031-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.378.203 2.398.1 2.651.64.7 1.03 1.595 1.03 2.688 0 3.848-2.338 4.695-4.566 4.942.359.308.678.92.678 1.852 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.001 10.001 0 0022 12c0-5.523-4.477-10-10-10z"
+                            fill-rule="evenodd"></path>
+                    </svg>
+                        github.com/vaN1N
+                    </a>
+            </section>
+
+            <section id="about" style="scroll-margin-top: 100px;"><!--Sobre mi-->
+                <h3 class="text-2xl font-bold mb-4 text-gray-900 dark:text-white">Sobre mi</h3>
+                <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
+                    Desarrollador web altamente motivado con un fuerte compromiso con el aprendizaje continuo y sólidas habilidades en el diseño de interfaces, 
+                    desarrollo y mantenimiento de sitios web. Demuestra la capacidad de trabajar de manera efectiva tanto de forma independiente 
+                    como en entornos colaborativos, entregando soluciones de alta calidad que cumplen y superan las expectativas del cliente. 
+                    Apasionado por mantenerse al día con las últimas tecnologías y mejorar continuamente sus habilidades técnicas.
+                </p>
+            </section>
+
+            <section id="experience" style="scroll-margin-top: 100px;"> <!--Experencia-->
+                <a href="#detailed_experience">
+                    <h3 class="text-2xl font-bold mb-8 text-gray-900 dark:text-white">Experencia</h3>
+                    <div class="space-y-8">
+                        <div class="flex gap-6 card">
+                            <div class="flex-shrink-0">
+                            <div class="w-16 h-16 rounded-lg bg-cover bg-center"
+                                style='background-image: url("./sources/img/logo-maestre.png");'>
+                            </div>
+                            </div>
+                            <div>
+                            <h4 class="text-lg font-semibold text-gray-900 dark:text-white">Tecnico de Sistemas Microinformáticos y Redes</h4>
+                            <p class="text-sm text-gray-500 dark:text-gray-400">2022 - 2024</p>
+                            <p class="mt-2 text-gray-700 dark:text-gray-300">
+                                He creado y gestionado plataformas educativas en Moodle, diseñando y personalizando cursos según las necesidades de los usuarios. 
+                                Además, he desarrollado páginas web utilizando HTML5, CSS y JavaScript, integrando contenido interactivo y funcional. 
+                                También he diseñado hojas de cálculo en Excel aplicando lógica de programación para automatizar procesos, y he implementado soluciones de automatización en Access, 
+                                ºoptimizando la gestión y el flujo de información.
+                            </p>
+                            </div>
+                        </div>
+                        <div class="flex gap-6 card">
+                            <div class="flex-shrink-0">
+                            <div class="w-16 h-16 rounded-lg bg-cover bg-center"
+                                style='background-image: url("./sources/img/logo-maestre.png");'>
+                            </div>
+                            </div>
+                            <div>
+                            <h4 class="text-lg font-semibold text-gray-900 dark:text-white">Tecnico Superior de Desarrollo Web</h4>
+                            <p class="text-sm text-gray-500 dark:text-gray-400">2024 - 2026 (En proceso)</p>
+                            <p class="mt-2 text-gray-700 dark:text-gray-300">
+                                He desarrollado programas en Java, realizando diversos proyectos que incluyen 
+                                el uso de bases de datos como MySQL y la gestión de contenedores con Docker. Además de estas tecnologías, 
+                                he adquirido experiencia en diseño de interfaces con Figma, he profundizado en JavaScript y he aprendido un nuevo lenguaje como PHP, 
+                                trabajando con frameworks y librerías como Bootstrap, AngularJS y Laravel.
+                            </p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </section>
+
+            <section id="skills" style="scroll-margin-top: 100px;"><!--Skills Claves--> 
+                <h3 class="text-2xl font-bold mb-8 text-gray-900 dark:text-white">Skills Claves</h3>
+                    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+                    
+                    <div class="flex flex-col items-center gap-2 p-4 rounded-lg bg-primary/5 dark:bg-primary/20">
+                        <img alt="JavaScript" class="w-12 h-12" src="./sources/img/logo-js.png" />
+                        <h4 class="font-semibold text-gray-900 dark:text-white">JavaScript</h4>
+                    </div>
+                    
+                    <div class="flex flex-col items-center gap-2 p-4 rounded-lg bg-primary/5 dark:bg-primary/20">
+                        <img alt="Java" class="w-15 h-12" src="./sources/img/logo-java.png" />
+                        <h4 class="font-semibold text-gray-900 dark:text-white">Java</h4>
+                    </div>
+                    
+                    <div class="flex flex-col items-center gap-2 p-4 rounded-lg bg-primary/5 dark:bg-primary/20">
+                        <img alt="PHP" class="w-12 h-12" src="./sources/img/logo-php.png" />
+                        <h4 class="font-semibold text-gray-900 dark:text-white">PHP</h4>
+                    </div>
+                    
+                    <div class="flex flex-col items-center gap-2 p-4 rounded-lg bg-primary/5 dark:bg-primary/20">
+                        <img alt="MySQL" class="w-12 h-12" src="./sources/img/logo-MySQL.png" />
+                        <h4 class="font-semibold text-gray-900 dark:text-white">MySQL</h4>
+                    </div>
+                    
+                    <div class="flex flex-col items-center gap-2 p-4 rounded-lg bg-primary/5 dark:bg-primary/20">
+                        <img alt="GitHub" class="w-12 h-12" src="./sources/img/logo-angular.png" />
+                        <h4 class="font-semibold text-gray-900 dark:text-white">Angular Js</h4>
+                    </div>
+
+                    <div class="flex flex-col items-center gap-2 p-4 rounded-lg bg-primary/5 dark:bg-primary/20">
+                        <img alt="GitHub" class="w-12 h-12" src="./sources/img/logo-laravel.png" />
+                        <h4 class="font-semibold text-gray-900 dark:text-white">Laravel</h4>
+                    </div>
+
+                    <div class="flex flex-col items-center gap-2 p-4 rounded-lg bg-primary/5 dark:bg-primary/20">
+                        <img alt="GitHub" class="w-12 h-12" src="./sources/img/logo-bootstrap.png" />
+                        <h4 class="font-semibold text-gray-900 dark:text-white">Bootstrap</h4>
+                    </div>
+
+                    <div class="flex flex-col items-center gap-2 p-4 rounded-lg bg-primary/5 dark:bg-primary/20">
+                        <img alt="GitHub" class="w-12' h-12" src="./sources/img/logo-docker.png" />
+                        <h4 class="font-semibold text-gray-900 dark:text-white">Docker</h4>
+                    </div>
+                    
+                    <div class="flex flex-col items-center gap-2 p-4 rounded-lg bg-primary/5 dark:bg-primary/20">
+                        <img alt="GitHub" class="w-13 h-12" src="./sources/img/logo-html.png" />
+                        <h4 class="font-semibold text-gray-900 dark:text-white">HTML</h4>
+                    </div>
+
+                    <div class="flex flex-col items-center gap-2 p-4 rounded-lg bg-primary/5 dark:bg-primary/20">
+                        <img alt="GitHub" class="w-12 h-12" src="./sources/img/logo-git.png" />
+                        <h4 class="font-semibold text-gray-900 dark:text-white">GitHub</h4>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="projects" style="scroll-margin-top: 100px;"><!--Proyectos-->
+                <h3 class="text-2xl font-bold mb-8 text-gray-900 dark:text-white">Proyectos</h3>
+                <div class="space-y-12">
+                    <a href="https://github.com/vaN1N/proyecto_portafolio" target="_blank" class="block">
+                    <div class="grid md:grid-cols-2 gap-8 items-center card">
+                        <div>
+                        <p class="text-sm font-semibold text-primary">Proyecto Personal</p>
+                        <h4 class="text-xl font-bold mt-1 text-gray-900 dark:text-white">Portafolio</h4>
+                        <p class="mt-2 text-gray-700 dark:text-gray-300">
+                            Creé un sitio web personal para mostrar mi experiencia profesional en detalle.
+                        </p>
+                        </div>
+                        <div class="w-full h-64 bg-cover bg-center rounded-lg"
+                        style='background-image: url("./sources/img/portafolio.png");'>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+            </section>
+            
+            <section id="detailed_experience" style="scroll-margin-top: 100px;"> <!--Experencia detallada-->
+                <h3 class="text-2xl font-bold mb-8 text-gray-900 dark:text-white">Roles y Desarollos</h3>
+                <p style="padding-bottom: 30px;"> En esta sección hablaré en detalle sobre los roles y desarrollos que he llevado a cabo a lo largo de mi experiencia profesional.</p>
+                <div class="space-y-8">
+                    <div class="flex gap-6 ">
+                    <div class="flex-shrink-0"></div>
+                        <div class="space-y-4">
+                            <h4 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Tecnico de Sistemas Microinformáticos y Redes</h4>
+                                <div class="space-y-2">
+                                    <h5 class="font-semibold">Arcadie College</h5>
+                                    <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
+                                        He creado y gestionado diversas plataformas educativas utilizando Moodle, adaptándolas a las necesidades específicas de los usuarios. 
+                                        Esto ha incluido el diseño, estructuración y personalización de cursos virtuales, así como la configuración de actividades, recursos y 
+                                        evaluaciones que fomentan una experiencia de aprendizaje dinámica y efectiva. Mi enfoque ha estado orientado a mejorar la accesibilidad, 
+                                        la usabilidad y la interacción dentro del entorno educativo digital.En paralelo, he desarrollado sitios web empleando tecnologías como 
+                                        HTML5, CSS y JavaScript, integrando contenido interactivo y funcional que responde a los estándares actuales de diseño web. Estos proyectos 
+                                        han requerido una atención especial a la experiencia del usuario (UX), la adaptabilidad a dispositivos móviles y la optimización del rendimiento
+                                        en navegadores modernos.También he trabajado en la automatización de procesos administrativos mediante el uso avanzado de Microsoft Excel, aplicando
+                                        lógica de programación con fórmulas complejas, tablas dinámicas y macros para agilizar tareas repetitivas y mejorar la eficiencia operativa. Asimismo, he 
+                                        implementado soluciones en Microsoft Access, diseñando bases de datos relacionales y formularios personalizados que han permitido optimizar la gestión de 
+                                        información y mejorar el flujo de trabajo en distintos contextos organizativos.
+                                    </p>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="flex gap-6 ">
+                        <div class="flex-shrink-0"></div>
+                            <div class="space-y-4">
+                                <h4 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Tecnico Superior de Desarollo Web</h4>
+                                    <div class="space-y-2">
+                                        <h5 class="font-semibold">Indra</h5>
+                                        <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
+                                            He desarrollado aplicaciones en Java, participando en diversos proyectos que han requerido tanto lógica de programación como integración con bases de datos
+                                            como MySQL. Estos desarrollos han abarcado desde aplicaciones de escritorio hasta soluciones web, incorporando prácticas de programación orientada a objetos
+                                            y estructuras eficientes para el manejo de datos. Como parte de mi enfoque en la modernización y despliegue de software, he trabajado con Docker para la gestión
+                                            de contenedores, lo que me ha permitido crear entornos de desarrollo consistentes, facilitar la implementación de aplicaciones y mejorar la escalabilidad de los
+                                            proyectos. Además, he adquirido experiencia en el diseño de interfaces de usuario utilizando herramientas como Figma, lo que me ha permitido colaborar en la
+                                            creación de prototipos visuales y mejorar la experiencia del usuario en los productos desarrollados. Paralelamente, he profundizado en JavaScript, ampliando
+                                            mis conocimientos en programación web dinámica y en la interacción con el DOM. También he aprendido y aplicado el lenguaje PHP, trabajando con frameworks
+                                            y librerías como Laravel, Bootstrap y AngularJS, lo que me ha permitido desarrollar aplicaciones web robustas, con estructuras modulares, diseño responsivo
+                                            y funcionalidades avanzadas tanto en el frontend como en el backend.
+                                        </p>
+                                    </div>
+                            </div>
+                        </div>
+            </section>
+
+            <section id="otherSkills"><!--Otras Skills-->
+                <h4 class="text-xl font-bold my-8 text-gray-900 dark:text-white">Skills Secundarias</h4>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+                    <!-- <div class="flex items-center gap-3 p-3 rounded bg-gray-100 dark:bg-gray-800">
+                    <img alt="React" class="w-6 h-6" src="./src/images/logo node.png" />
+                    <h5 class="font-medium text-gray-800 dark:text-gray-200">Node.js</h5>
+                    </div>-->
+                </div>
+            </section>
+
+            <section id="contact" style="scroll-margin-top: 100px;">
+                <h3 class="text-2xl font-bold mb-8 text-gray-900 dark:text-white">Contacto</h3>
+                    <form action="https://formsubmit.co/ivnabro@gmail.com" method="POST" class="space-y-6">
+                        <div>
+                        <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2" for="email">Email</label>
+                        <input
+                            name="email"
+                            id="email"
+                            type="email"
+                            required
+                            placeholder="tu.email@ejemplo.com"
+                            class="form-input w-full rounded border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-800 text-gray-900 dark:text-white focus:ring-primary focus:border-primary"
+                        />
+                        </div>
+                        <div>
+                        <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2" for="message">Mensaje</label>
+                        <textarea
+                            name="message"
+                            id="message"
+                            rows="4"
+                            required
+                            placeholder="Introduce tu mensaje"
+                            class="form-textarea w-full rounded border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-800 text-gray-900 dark:text-white focus:ring-primary focus:border-primary"
+                        ></textarea>
+                        </div>
+                        <div class="text-right">
+                        <button
+                            type="submit"
+                            class="inline-flex justify-center py-2 px-6 border border-transparent shadow-sm text-sm font-medium rounded-lg text-white bg-primary hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary"
+                        >
+                            Enviar
+                        </button>
+                        </div>
+                    </form>              
+            </section>
+
+            </div>
+    </main>
+        <footer class="bg-gray-100 dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-6 text-center text-sm text-gray-500 dark:text-gray-400">
+                <p>© 2025 Iván Naranjo Broceño. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        function openPrintPage() {
+            const printWindow = window.open('./src/utils/cv_for_print_english.html', '_blank');
+                    printWindow.onload = function () {
+                    printWindow.focus();
+                    printWindow.print();
+                    printWindow.onafterprint = function () {
+                    printWindow.close();
+                };
+            };
+        }
+    </script>
+</body>
+</html>
