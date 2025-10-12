@@ -483,9 +483,10 @@
             <section id="contact" style="scroll-margin-top: 100px;"><!--Contacto-->
                 <h3 data-key="contact.title" class="text-2xl font-bold mb-8 text-gray-900 dark:text-white">Contacto</h3>
                     <form action="https://formsubmit.co/ivnabro@gmail.com" method="POST" class="space-y-6">
-                        <input type="hidden" name="_next" value="https://van1n.github.io/proyecto_portafolio/sources/pages/gracias.html">
+                        <input type="hidden" name="_redirect" value="https://van1n.github.io/proyecto_portafolio/sources/pages/gracias.html">
+
                         <div>
-                        <label data-key="contact.email" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2" for="email">Email</label>
+                        <label data-key="contact.email" class="block text-sm font-medium text-gray-700 dark:t ext-gray-300 mb-2" for="email">Email</label>
                         <input
                             name="email"
                             id="email"
@@ -506,13 +507,14 @@
                             class="form-textarea w-full rounded border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-800 text-gray-900 dark:text-white focus:ring-primary focus:border-primary"
                         ></textarea>
                         </div>
-                        <div class="text-right">
-                        <button
-                            type="submit"
-                            class="inline-flex justify-center py-2 px-6 border border-transparent shadow-sm text-sm font-medium rounded-lg text-white bg-primary hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary"
-                        >
-                            Enviar
-                        </button>
+
+                        <div class="flex justify-end">
+                            <button 
+                            type="submit" 
+                            class="flex items-center gap-2 py-2 px-6 text-xs bg-gray-900 text-white rounded-md shadow hover:bg-gray-800 transition dark:bg-gray-100 dark:text-gray-900 dark:hover:bg-gray-200">
+                                    <span class="material-symbols-outlined text-[1.4em] leading-none text-white dark:text-gray-900">send</span>    
+                                    Enviar
+                                </button>
                         </div>
                     </form>              
             </section>
@@ -539,7 +541,4 @@
         }
     </script>
 </body>
-
 </html>
-
-
