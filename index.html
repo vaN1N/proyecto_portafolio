@@ -99,13 +99,16 @@
                 <!--Menu principal-->
                 <div class="flex items-center gap-4">
 
+
                     <!-- Barra de navegación -->
-                        <nav>
+                        <!-- NAVBAR -->
+                        <nav >
                             <!-- Botón hamburguesa (visible solo en móvil) -->
-                            <button id="menu-toggle" class="sm:hidden p-2 rounded-md hover:bg-gray-800 transition">
-                                <span id="menu-icon" class="material-symbols-outlined text-[24px] transition-transform duration-300">menu</span>
+                            <button id="menu-toggle"
+                            class="flex items-center gap-2 px-3 py-1.5 text-xs bg-gray-900 text-white rounded-md shadow hover:bg-gray-800 transition dark:bg-gray-100 dark:text-gray-900 dark:hover:bg-gray-200">
+                                <span id="menu-icon" class="material-symbols-outlined text-[1.7em] leading-none align-middle text-white dark:text-gray-900">menu</span>
                             </button>
-                        
+
                             <!-- Menú de navegación -->
                             <div id="nav-menu" class="hidden sm:flex gap-6 text-sm font-medium">
                             <a data-key="nav.about" class="hover:text-primary transition-colors" href="#about">Sobre mí</a>
@@ -123,15 +126,15 @@
                         <div id="mobile-menu"
                         class="sm:hidden hidden absolute top-full left-0 w-full max-w-sm mx-auto mt-2 bg-white dark:bg-gray-900 text-gray-900 dark:text-white rounded-xl shadow-2xl border border-gray-200 dark:border-gray-700 transition-all duration-300 z-50 overflow-hidden">
                             <ul class="flex flex-col divide-y divide-gray-200 dark:divide-gray-700">
-                            <li><a href="#about" class="flex items-center gap-2 px-4 py-3 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
+                            <li><a data-key="nav.about" href="#about" class="flex items-center gap-2 px-4 py-3 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
                                 <span class="material-symbols-outlined text-[20px]">person</span> Sobre mí</a></li>
-                            <li><a href="#experience" class="flex items-center gap-2 px-4 py-3 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
+                            <li><a data-key="nav.experience" href="#experience" class="flex items-center gap-2 px-4 py-3 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
                                 <span class="material-symbols-outlined text-[20px]">work</span> Experiencia</a></li>
-                            <li><a href="#skills" class="flex items-center gap-2 px-4 py-3 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
+                            <li><a data-key="nav.skills" href="#skills" class="flex items-center gap-2 px-4 py-3 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
                                 <span class="material-symbols-outlined text-[20px]">star</span> Skills</a></li>
-                            <li><a href="#projects" class="flex items-center gap-2 px-4 py-3 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
+                            <li><a data-key="nav.projects" href="#projects" class="flex items-center gap-2 px-4 py-3 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
                                 <span class="material-symbols-outlined text-[20px]">folder</span> Proyectos</a></li>
-                            <li><a href="#contact" class="flex items-center gap-2 px-4 py-3 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
+                            <li><a data-key="nav.contact" href="#contact" class="flex items-center gap-2 px-4 py-3 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
                                 <span class="material-symbols-outlined text-[20px]">mail</span> Contacto</a></li>
                             </ul>
                         </div>
@@ -168,12 +171,12 @@
                         
                         <div id="lang-menu" class="absolute right-0 mt-2 w-44 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow-lg hidden z-50 transition-all duration-200 origin-top-right">
                             <ul class="py-1 text-xs text-gray-700 dark:text-gray-200">
-                            <li><button data-lang="es" class="flex items-center w-full px-3 py-1 hover:bg-indigo-100 dark:hover:bg-indigo-700 rounded transition">🇪🇸 <span class="ml-2">Español</span></button></li>
-                            <li><button data-lang="en" class="flex items-center w-full px-3 py-1 hover:bg-indigo-100 dark:hover:bg-indigo-700 rounded transition">🇬🇧 <span class="ml-2">English</span></button></li>
-                            <li><button data-lang="fr" class="flex items-center w-full px-3 py-1 hover:bg-indigo-100 dark:hover:bg-indigo-700 rounded transition">🇫🇷 <span class="ml-2">Français</span></button></li>
-                            <li><button data-lang="pt" class="flex items-center w-full px-3 py-1 hover:bg-indigo-100 dark:hover:bg-indigo-700 rounded transition">🇵🇹 <span class="ml-2">Português</span></button></li>
-                            <li><button data-lang="de" class="flex items-center w-full px-3 py-1 hover:bg-indigo-100 dark:hover:bg-indigo-700 rounded transition">🇩🇪 <span class="ml-2">Deutsch</span></button></li>
-                            <li><button data-lang="it" class="flex items-center w-full px-3 py-1 hover:bg-indigo-100 dark:hover:bg-indigo-700 rounded transition">🇮🇹 <span class="ml-2">Italiano</span></button></li>
+                            <li><button data-lang="es" class="flex items-center w-full px-3 py-2 hover:bg-indigo-100 dark:hover:bg-indigo-700 rounded transition">🇪🇸 <span class="ml-2">Español</span></button></li>
+                            <li><button data-lang="en" class="flex items-center w-full px-3 py-2 hover:bg-indigo-100 dark:hover:bg-indigo-700 rounded transition">🇬🇧 <span class="ml-2">English</span></button></li>
+                            <li><button data-lang="fr" class="flex items-center w-full px-3 py-2 hover:bg-indigo-100 dark:hover:bg-indigo-700 rounded transition">🇫🇷 <span class="ml-2">Français</span></button></li>
+                            <li><button data-lang="pt" class="flex items-center w-full px-3 py-2 hover:bg-indigo-100 dark:hover:bg-indigo-700 rounded transition">🇵🇹 <span class="ml-2">Português</span></button></li>
+                            <li><button data-lang="de" class="flex items-center w-full px-3 py-2 hover:bg-indigo-100 dark:hover:bg-indigo-700 rounded transition">🇩🇪 <span class="ml-2">Deutsch</span></button></li>
+                            <li><button data-lang="it" class="flex items-center w-full px-3 py-2 hover:bg-indigo-100 dark:hover:bg-indigo-700 rounded transition">🇮🇹 <span class="ml-2">Italiano</span></button></li>
                             </ul>
                         </div>
                     </div>
