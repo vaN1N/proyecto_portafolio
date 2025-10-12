@@ -29,7 +29,7 @@
 <title>Portafolio Ivan Naranjo</title>
 <link as="style"
     href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
-    onload="this.rel='stylesheet'" rel="stylesheet" />
+    onload="this.rel='stylesheet'" rel="stylesheet"/>
 
 <!--Linkado de tailwindcss-->
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
@@ -98,22 +98,180 @@
 
                 <!--Menu principal-->
                 <div class="flex items-center gap-4">
-                    <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
-                        <a class="hover:text-primary transition-colors" href="#about">Sobre mi</a>
-                        <a class="hover:text-primary transition-colors" href="#experience">Experiencia</a>
-                        <a class="hover:text-primary transition-colors" href="#skills">Skills</a>
-                        <a class="hover:text-primary transition-colors" href="#projects">Proyectos</a>
-                        <a class="hover:text-primary transition-colors" href="#contact">Contacto</a>
-                    </nav>
-                        <!--Boton para idioma-->
-                        <button onclick="alert('La versión en ingles esta en proceso.')">
-                            <span class="material-symbols-outlined"> language </span>
-                        </button>
+                    <!-- <nav class="flex items-center gap-6 text-sm font-medium">
+                        <a data-key="nav.about" class="hover:text-primary transition-colors" href="#about">Sobre mi</a>
+                        <a data-key="nav.experience" class="hover:text-primary transition-colors" href="#experience">Experencia</a>
+                        <a data-key="nav.skills" class="hover:text-primary transition-colors" href="#skills">Skills</a>
+                        <a data-key="nav.projects" class="hover:text-primary transition-colors" href="#projects">Proyectos</a>
+                        <a data-key="nav.contact" class="hover:text-primary transition-colors" href="#contact">Contacto</a>
+                    </nav> -->
 
-                        <!--Boton para cambiar tema-->
-                        <button id="theme-toggle" class="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors" onclick="document.documentElement.classList.toggle('dark')">
-                            <span class="material-symbols-outlined text-gray-600 dark:text-gray-300">dark_mode</span>
+                    <!-- Barra de navegación -->
+                        <!-- NAVBAR -->
+                        <nav >
+                            <!-- Botón hamburguesa (visible solo en móvil) -->
+                            <button id="menu-toggle" class="sm:hidden p-2 rounded-md hover:bg-gray-800 transition">
+                                <span id="menu-icon" class="material-symbols-outlined text-[24px] transition-transform duration-300">menu</span>
+                            </button>
+                        
+                            <!-- Menú de navegación -->
+                            <div id="nav-menu" class="hidden sm:flex gap-6 text-sm font-medium">
+                            <a data-key="nav.about" class="hover:text-primary transition-colors" href="#about">Sobre mí</a>
+                            <a data-key="nav.experience" class="hover:text-primary transition-colors" href="#experience">Experiencia</a>
+                            <a data-key="nav.skills" class="hover:text-primary transition-colors" href="#skills">Skills</a>
+                            <a data-key="nav.projects" class="hover:text-primary transition-colors" href="#projects">Proyectos</a>
+                            <a data-key="nav.contact" class="hover:text-primary transition-colors" href="#contact">Contacto</a>
+                            </div>
+                        </nav>
+                        
+
+                        <!-- Menú desplegable en móvil -->
+
+                                    
+                        <div id="mobile-menu"
+                        class="sm:hidden hidden absolute top-full left-0 w-full max-w-sm mx-auto mt-2 bg-white dark:bg-gray-900 text-gray-900 dark:text-white rounded-xl shadow-2xl border border-gray-200 dark:border-gray-700 transition-all duration-300 z-50 overflow-hidden">
+                            <ul class="flex flex-col divide-y divide-gray-200 dark:divide-gray-700">
+                            <li><a href="#about" class="flex items-center gap-2 px-4 py-3 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
+                                <span class="material-symbols-outlined text-[20px]">person</span> Sobre mí</a></li>
+                            <li><a href="#experience" class="flex items-center gap-2 px-4 py-3 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
+                                <span class="material-symbols-outlined text-[20px]">work</span> Experiencia</a></li>
+                            <li><a href="#skills" class="flex items-center gap-2 px-4 py-3 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
+                                <span class="material-symbols-outlined text-[20px]">star</span> Skills</a></li>
+                            <li><a href="#projects" class="flex items-center gap-2 px-4 py-3 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
+                                <span class="material-symbols-outlined text-[20px]">folder</span> Proyectos</a></li>
+                            <li><a href="#contact" class="flex items-center gap-2 px-4 py-3 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
+                                <span class="material-symbols-outlined text-[20px]">mail</span> Contacto</a></li>
+                            </ul>
+                        </div>
+
+
+                        <script>
+                            const toggleBtn = document.getElementById('menu-toggle');
+                            const mobileMenu = document.getElementById('mobile-menu');
+                            const menuIcon = document.getElementById('menu-icon');
+
+                            toggleBtn.addEventListener('click', () => {
+                            mobileMenu.classList.toggle('hidden');
+                            menuIcon.textContent = mobileMenu.classList.contains('hidden') ? 'menu' : 'close';
+                            });
+
+                            // Cerrar el menú al hacer clic en un enlace
+                            mobileMenu.querySelectorAll('a').forEach(link => {
+                            link.addEventListener('click', () => {
+                                mobileMenu.classList.add('hidden');
+                                menuIcon.textContent = 'menu';
+                            });
+                            });
+                        </script>
+
+                    <!--Boton para idioma-->
+                    <div class="relative inline-block text-left">
+                        <button id="lang-btn"
+                        class="flex items-center gap-2 px-3 py-1.5 text-xs bg-gray-900 text-white rounded-md shadow hover:bg-gray-800 transition dark:bg-gray-100 dark:text-gray-900 dark:hover:bg-gray-200">
+                        <span class="material-symbols-outlined text-[1.7em] leading-none align-middle">language</span>
+                            <svg class="w-3 h-3 ml-1 transition-transform" id="lang-arrow" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
                         </button>
+                        
+                        <div id="lang-menu" class="absolute right-0 mt-2 w-44 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow-lg hidden z-50 transition-all duration-200 origin-top-right">
+                            <ul class="py-1 text-xs text-gray-700 dark:text-gray-200">
+                            <li><button data-lang="es" class="flex items-center w-full px-3 py-1 hover:bg-indigo-100 dark:hover:bg-indigo-700 rounded transition">🇪🇸 <span class="ml-2">Español</span></button></li>
+                            <li><button data-lang="en" class="flex items-center w-full px-3 py-1 hover:bg-indigo-100 dark:hover:bg-indigo-700 rounded transition">🇬🇧 <span class="ml-2">English</span></button></li>
+                            <li><button data-lang="fr" class="flex items-center w-full px-3 py-1 hover:bg-indigo-100 dark:hover:bg-indigo-700 rounded transition">🇫🇷 <span class="ml-2">Français</span></button></li>
+                            <li><button data-lang="pt" class="flex items-center w-full px-3 py-1 hover:bg-indigo-100 dark:hover:bg-indigo-700 rounded transition">🇵🇹 <span class="ml-2">Português</span></button></li>
+                            <li><button data-lang="de" class="flex items-center w-full px-3 py-1 hover:bg-indigo-100 dark:hover:bg-indigo-700 rounded transition">🇩🇪 <span class="ml-2">Deutsch</span></button></li>
+                            <li><button data-lang="it" class="flex items-center w-full px-3 py-1 hover:bg-indigo-100 dark:hover:bg-indigo-700 rounded transition">🇮🇹 <span class="ml-2">Italiano</span></button></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                        
+                        <script> //Función para aplicar el idioma seleccionado
+                            document.querySelectorAll('#lang-menu button').forEach(btn => {
+                            btn.addEventListener('click', () => {
+                                const selectedLang = btn.getAttribute('data-lang');
+                                localStorage.setItem('lang', selectedLang); // Guarda el idioma
+                                applyLanguage(selectedLang); // Aplica el idioma
+
+                                // Cierra el menú
+                                document.getElementById('lang-menu').classList.add('hidden');
+
+                                // Opcional: resetea flecha si usas animación
+                                document.getElementById('lang-arrow')?.classList.remove('rotate-180');
+                            });
+                            });
+
+
+                        // 🔁 Función para aplicar el idioma seleccionado
+                            function applyLanguage(lang) {
+                                // Carga el archivo JSON correspondiente al idioma
+                                fetch(`./lang/${lang}.json`)
+                                    .then(response => {
+                                        if (!response.ok) throw new Error("Archivo no encontrado");
+                                        return response.json();
+                                    })
+                                    .then(translations => {
+                                        // Recorre todos los elementos con atributo data-key
+                                        document.querySelectorAll('[data-key]').forEach(el => {
+                                            const keyPath = el.getAttribute('data-key').split('.');
+                                            let value = translations;
+                                            // Navega por el objeto JSON usando las claves
+                                            keyPath.forEach(k => {
+                                                value = value?.[k];
+                                            });
+                                            // Si se encuentra el valor, se actualiza el contenido del elemento
+                                            if (value) {
+                                                el.textContent = value;
+                                            }
+                                        });
+                                    })
+                                    .catch(error => console.error('Error al cargar el idioma:', error));
+                            }
+
+                            // 🌐 Mostrar/Ocultar el menú de idiomas al hacer clic en el botón
+                            document.getElementById('lang-btn').addEventListener('click', () => {
+                                const menu = document.getElementById('lang-menu');
+                                menu.classList.toggle('hidden');
+                            });
+
+                            // 🌍 Cambiar idioma al hacer clic en un botón del menú
+                            document.querySelectorAll('#lang-menu button').forEach(btn => {
+                                btn.addEventListener('click', () => {
+                                    const selectedLang = btn.getAttribute('data-lang');
+                                    localStorage.setItem('lang', selectedLang); // Guarda el idioma en localStorage
+                                    applyLanguage(selectedLang); // Aplica el idioma seleccionado
+                                });
+                            });
+
+                            // 🚀 Aplicar idioma guardado al cargar la página (cuando se hace clic en un elemento específico)
+                            document.addEventListener("DOMContentLoaded", function () {
+                                const elemento = document.getElementById("tuId"); // Este ID debe ser el que activa el idioma
+                                if (elemento) {
+                                    elemento.addEventListener("click", () => {
+                                        const savedLang = localStorage.getItem('lang') || 'es'; // Si no hay idioma guardado, usa español
+                                        applyLanguage(savedLang);
+                                    });
+                                }
+                            });
+
+                            // 🧪 Prueba de carga del archivo español (solo para depuración en consola)
+                            fetch('./lang/es.json')
+                                .then(res => res.json())
+                                .then(data => console.log(data))
+                                .catch(err => console.error('Error:', err));
+
+
+                        </script>
+
+
+                    <!-- Botón para cambiar entre modo claro y oscuro -->
+                    <button id="theme-toggle" 
+                    class="flex items-center gap-2 px-3 py-1.5 text-xs bg-gray-900 text-white rounded-md shadow hover:bg-gray-800 transition dark:bg-gray-100 dark:text-gray-900 dark:hover:bg-gray-200" 
+                    onclick="document.documentElement.classList.toggle('dark')">
+                        <span class="material-symbols-outlined text-[1.7em] leading-none align-middle text-white dark:text-gray-900">dark_mode</span>
+                    </button>
+
                     </div>
                 </div>
             </div>
@@ -125,13 +283,13 @@
                 <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full w-32 h-32 mx-auto mb-4"
                     style='background-image: url("./sources/img/yo.jpg");'></div>
 
-                <h2 class="text-4xl font-bold text-gray-900 dark:text-white">Iván Naranjo Broceño</h2>
-                <p class="text-lg text-gray-600 dark:text-gray-400 mt-1">Desarrollador Web</p>
+                <h2 data-key="header.name" class="text-4xl font-bold text-gray-900 dark:text-white">Iván Naranjo Broceño</h2>
+                <p data-key="header.role" class="text-lg text-gray-600 dark:text-gray-400 mt-1">Desarrollador Web</p>
 
                 <div class="mt-4 flex flex-wrap justify-center gap-x-4 gap-y-2 text-sm text-gray-600 dark:text-gray-400">
-                    <span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-base">location_on</span>
-                    Ciudad Real, Spain</span>
-                    <a class="flex items-center gap-1.5 hover:text-primary" href="mailto:davidcuevascarrasco10@gmail.com"><span
+                    <span data-key="header.location" class="flex items-center gap-1.5"><span class="material-symbols-outlined text-base">location_on</span>
+                    Ciudad Real, España</span>
+                    <a class="flex items-center gap-1.5 hover:text-primary" data-key="header.email" href="mailto:ivnabro@gmail.com"><span
                         class="material-symbols-outlined text-base">mail</span> ivnabro@gmail.com</a>
                     <a class="flex items-center gap-1.5 hover:text-primary" href="https://www.linkedin.com/in/ivannaranjo1/"
                     rel="noopener noreferrer" target="_blank">
@@ -154,8 +312,8 @@
             </section>
 
             <section id="about" style="scroll-margin-top: 100px;"><!--Sobre mi-->
-                <h3 class="text-2xl font-bold mb-4 text-gray-900 dark:text-white">Sobre mi</h3>
-                <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
+                <h3 data-key="about.title" class="text-2xl font-bold mb-4 text-gray-900 dark:text-white">Sobre mi</h3>
+                <p data-key="about.description" class="text-gray-700 dark:text-gray-300 leading-relaxed">
                     Desarrollador web altamente motivado con un fuerte compromiso con el aprendizaje continuo y sólidas habilidades en el diseño de interfaces, 
                     desarrollo y mantenimiento de sitios web. Demuestra la capacidad de trabajar de manera efectiva tanto de forma independiente 
                     como en entornos colaborativos, entregando soluciones de alta calidad que cumplen y superan las expectativas del cliente. 
@@ -165,7 +323,7 @@
 
             <section id="experience" style="scroll-margin-top: 100px;"> <!--Experencia-->
                 <a href="#detailed_experience">
-                    <h3 class="text-2xl font-bold mb-8 text-gray-900 dark:text-white">Experencia</h3>
+                    <h3 data-key="experience.title" class="text-2xl font-bold mb-8 text-gray-900 dark:text-white">Experencia</h3>
                     <div class="space-y-8">
                         <div class="flex gap-6 card">
                             <div class="flex-shrink-0">
@@ -174,9 +332,9 @@
                             </div>
                             </div>
                             <div>
-                            <h4 class="text-lg font-semibold text-gray-900 dark:text-white">Tecnico de Sistemas Microinformáticos y Redes</h4>
-                            <p class="text-sm text-gray-500 dark:text-gray-400">2022 - 2024</p>
-                            <p class="mt-2 text-gray-700 dark:text-gray-300">
+                            <h4 data-key="experience.job1_title" class="text-lg font-semibold text-gray-900 dark:text-white">Tecnico de Sistemas Microinformáticos y Redes</h4>
+                            <p data-key="experience.job1_period" class="text-sm text-gray-500 dark:text-gray-400">2022 - 2024</p>
+                            <p data-key="experience.job1_desc" class="mt-2 text-gray-700 dark:text-gray-300">
                                 He creado y gestionado plataformas educativas en Moodle, diseñando y personalizando cursos según las necesidades de los usuarios. 
                                 Además, he desarrollado páginas web utilizando HTML5, CSS y JavaScript, integrando contenido interactivo y funcional. 
                                 También he diseñado hojas de cálculo en Excel aplicando lógica de programación para automatizar procesos, y he implementado soluciones de automatización en Access, 
@@ -191,9 +349,9 @@
                             </div>
                             </div>
                             <div>
-                            <h4 class="text-lg font-semibold text-gray-900 dark:text-white">Tecnico Superior de Desarrollo Web</h4>
-                            <p class="text-sm text-gray-500 dark:text-gray-400">2024 - 2026 (En proceso)</p>
-                            <p class="mt-2 text-gray-700 dark:text-gray-300">
+                            <h4 data-key="experience.job2_title" class="text-lg font-semibold text-gray-900 dark:text-white">Tecnico Superior de Desarrollo Web</h4>
+                            <p data-key="experience.job2_period" class="text-sm text-gray-500 dark:text-gray-400">2024 - 2026 (En proceso)</p>
+                            <p data-key="experience.job2_desc" class="mt-2 text-gray-700 dark:text-gray-300">
                                 He desarrollado programas en Java, realizando diversos proyectos que incluyen 
                                 el uso de bases de datos como MySQL y la gestión de contenedores con Docker. Además de estas tecnologías, 
                                 he adquirido experiencia en diseño de interfaces con Figma, he profundizado en JavaScript y he aprendido un nuevo lenguaje como PHP, 
@@ -206,7 +364,7 @@
             </section>
 
             <section id="skills" style="scroll-margin-top: 100px;"><!--Skills Claves--> 
-                <h3 class="text-2xl font-bold mb-8 text-gray-900 dark:text-white">Skills Claves</h3>
+                <h3 data-key="key.skill" class="text-2xl font-bold mb-8 text-gray-900 dark:text-white">Skills Claves</h3>
                     <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
                     
                     <div class="flex flex-col items-center gap-2 p-4 rounded-lg bg-primary/5 dark:bg-primary/20">
@@ -262,14 +420,13 @@
             </section>
             
             <section id="projects" style="scroll-margin-top: 100px;"><!--Proyectos-->
-                <h3 class="text-2xl font-bold mb-8 text-gray-900 dark:text-white">Proyectos</h3>
+                <h3 data-key="projects.title" class="text-2xl font-bold mb-8 text-gray-900 dark:text-white">Proyectos</h3>
                 <div class="space-y-12">
                     <a href="https://github.com/vaN1N/proyecto_portafolio" target="_blank" class="block">
                     <div class="grid md:grid-cols-2 gap-8 items-center card">
                         <div>
-                        <p class="text-sm font-semibold text-primary">Proyecto Personal</p>
-                        <h4 class="text-xl font-bold mt-1 text-gray-900 dark:text-white">Portafolio</h4>
-                        <p class="mt-2 text-gray-700 dark:text-gray-300">
+                        <p data-key="projects.project1_title" class="text-sm font-semibold text-primary">Proyecto Personal - Portafolio</p>
+                        <p data-key="projects.project1_desc" class="mt-2 text-gray-700 dark:text-gray-300">
                             Creé un sitio web personal para mostrar mi experiencia profesional en detalle.
                         </p>
                         </div>
@@ -282,16 +439,16 @@
             </section>
             
             <section id="detailed_experience" style="scroll-margin-top: 100px;"> <!--Experencia detallada-->
-                <h3 class="text-2xl font-bold mb-8 text-gray-900 dark:text-white">Roles y Desarollos</h3>
-                <p style="padding-bottom: 30px;"> En esta sección hablaré en detalle sobre los roles y desarrollos que he llevado a cabo a lo largo de mi experiencia profesional.</p>
+                <h3 data-key="detailed_experience.title" class="text-2xl font-bold mb-8 text-gray-900 dark:text-white">Roles y Desarollos</h3>
+                <p data-key="detailed_experience.intro" style="padding-bottom: 30px;"> En esta sección hablaré en detalle sobre los roles y desarrollos que he llevado a cabo a lo largo de mi experiencia profesional.</p>
                 <div class="space-y-8">
                     <div class="flex gap-6 ">
                     <div class="flex-shrink-0"></div>
                         <div class="space-y-4">
-                            <h4 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Tecnico de Sistemas Microinformáticos y Redes</h4>
+                            <h4 data-key="detailed_experience.title1" class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Tecnico de Sistemas Microinformáticos y Redes</h4>
                                 <div class="space-y-2">
-                                    <h5 class="font-semibold">Arcadie College</h5>
-                                    <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
+                                    <h5 data-key="detailed_experience.institution1" class="font-semibold">Arcadie College</h5>
+                                    <p data-key="detailed_experience.desc1" class="text-gray-700 dark:text-gray-300 leading-relaxed">
                                         He creado y gestionado diversas plataformas educativas utilizando Moodle, adaptándolas a las necesidades específicas de los usuarios. 
                                         Esto ha incluido el diseño, estructuración y personalización de cursos virtuales, así como la configuración de actividades, recursos y 
                                         evaluaciones que fomentan una experiencia de aprendizaje dinámica y efectiva. Mi enfoque ha estado orientado a mejorar la accesibilidad, 
@@ -309,10 +466,10 @@
                     <div class="flex gap-6 ">
                         <div class="flex-shrink-0"></div>
                             <div class="space-y-4">
-                                <h4 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Tecnico Superior de Desarollo Web</h4>
+                                <h4 data-key="detailed_experience.title2" class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Tecnico Superior de Desarollo Web</h4>
                                     <div class="space-y-2">
-                                        <h5 class="font-semibold">Indra</h5>
-                                        <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
+                                        <h5 data-key="detailed_experience.institution2" class="font-semibold">Indra</h5>
+                                        <p data-key="detailed_experience.desc2" class="text-gray-700 dark:text-gray-300 leading-relaxed">
                                             He desarrollado aplicaciones en Java, participando en diversos proyectos que han requerido tanto lógica de programación como integración con bases de datos
                                             como MySQL. Estos desarrollos han abarcado desde aplicaciones de escritorio hasta soluciones web, incorporando prácticas de programación orientada a objetos
                                             y estructuras eficientes para el manejo de datos. Como parte de mi enfoque en la modernización y despliegue de software, he trabajado con Docker para la gestión
@@ -327,11 +484,12 @@
                             </div>
                         </div>
             </section>
-            <section id="contact" style="scroll-margin-top: 100px;">
-                <h3 class="text-2xl font-bold mb-8 text-gray-900 dark:text-white">Contacto</h3>
+
+            <section id="contact" style="scroll-margin-top: 100px;"><!--Contacto-->
+                <h3 data-key="contact.title" class="text-2xl font-bold mb-8 text-gray-900 dark:text-white">Contacto</h3>
                     <form action="https://formsubmit.co/ivnabro@gmail.com" method="POST" class="space-y-6">
                         <div>
-                        <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2" for="email">Email</label>
+                        <label data-key="contact.email" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2" for="email">Email</label>
                         <input
                             name="email"
                             id="email"
@@ -342,13 +500,13 @@
                         />
                         </div>
                         <div>
-                        <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2" for="message">Mensaje</label>
+                        <label data-key="contact.message" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2" for="message">Mensaje</label>
                         <textarea
                             name="message"
                             id="message"
                             rows="4"
                             required
-                            placeholder="Introduce tu mensaje"
+                            placeholder="Example: Introduce your message"
                             class="form-textarea w-full rounded border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-800 text-gray-900 dark:text-white focus:ring-primary focus:border-primary"
                         ></textarea>
                         </div>
@@ -367,7 +525,7 @@
     </main>
         <footer class="bg-gray-100 dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-6 text-center text-sm text-gray-500 dark:text-gray-400">
-                <p>© 2025 Iván Naranjo Broceño. All rights reserved.</p>
+                <p data-key="footer.copyright">© 2025 Iván Naranjo Broceño. All rights reserved.</p>
             </div>
         </footer>
     </div>
@@ -385,5 +543,4 @@
         }
     </script>
 </body>
-
 </html>

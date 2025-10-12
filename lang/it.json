@@ -1,0 +1,64 @@
+{
+    "header": {
+    "name": "Iván Naranjo Broceño",
+    "role": "Sviluppatore Web",
+    "location": "Ciudad Real, Spagna",
+    "email": "ivnabro@gmail.com"
+    },
+
+    "nav": {
+    "about": "Chi sono",
+    "experience": "Esperienza",
+    "skills": "Competenze",
+    "projects": "Progetti",
+    "contact": "Contatto"
+    },
+
+    "about": {
+    "title": "Chi sono",
+    "description": "Sviluppatore web altamente motivato, con forte impegno nell'apprendimento continuo e solide competenze nel design delle interfacce, nello sviluppo e nella manutenzione di siti web. Dimostra la capacità di lavorare efficacemente sia in autonomia che in ambienti collaborativi, offrendo soluzioni di alta qualità che soddisfano e superano le aspettative del cliente. Appassionato di tecnologia, sempre aggiornato sulle ultime novità e desideroso di migliorare costantemente le proprie competenze tecniche."
+    },
+
+    "key": {
+    "skill": "Competenze chiave"
+    },
+
+    "experience": {
+    "title": "Esperienza",
+    "job1_title": "Tecnico di Sistemi Microinformatici e Reti",
+    "job1_period": "2022 - 2024",
+    "job1_desc": "Ho creato e gestito piattaforme educative su Moodle, progettando e personalizzando corsi in base alle esigenze degli utenti. Ho sviluppato siti web utilizzando HTML5, CSS e JavaScript, integrando contenuti interattivi e funzionali. Ho anche progettato fogli di calcolo in Excel con logica di programmazione per automatizzare i processi e implementato soluzioni in Access per ottimizzare la gestione delle informazioni.",
+    
+    "job2_title": "Tecnico Superiore in Sviluppo Web",
+    "job2_period": "2024 - 2026 (In corso)",
+    "job2_desc": "Ho sviluppato programmi in Java, partecipando a progetti che prevedevano l'uso di database come MySQL e la gestione dei container con Docker. Ho acquisito esperienza nel design di interfacce con Figma, approfondito JavaScript e imparato PHP, lavorando con framework e librerie come Bootstrap, AngularJS e Laravel."
+    },
+
+    "projects": {
+    "title": "Progetti",
+    "project1_title": "Progetto Personale - Portfolio",
+    "project1_desc": "Ho creato un sito web personale per mostrare in dettaglio la mia esperienza professionale."
+    },
+
+    "detailed_experience": {
+    "title": "Ruoli e Sviluppi",
+    "intro": "In questa sezione parlerò in dettaglio dei ruoli e dei progetti che ho svolto durante la mia esperienza professionale.",
+    "title1": "Tecnico di Sistemi Microinformatici e Reti",
+    "institution1": "Arcadie College",
+    "desc1": "Ho creato e gestito diverse piattaforme educative utilizzando Moodle, adattandole alle esigenze specifiche degli utenti. Questo ha incluso la progettazione, la strutturazione e la personalizzazione di corsi virtuali, nonché la configurazione di attività, risorse e valutazioni che favoriscono un'esperienza di apprendimento dinamica ed efficace. In parallelo, ho sviluppato siti web utilizzando HTML5, CSS e JavaScript, integrando contenuti interattivi e funzionali. Questi progetti hanno richiesto particolare attenzione all'esperienza utente (UX), all'adattabilità ai dispositivi mobili e all'ottimizzazione delle prestazioni nei browser moderni. Ho anche lavorato all'automazione dei processi amministrativi tramite l'uso avanzato di Microsoft Excel, applicando logica di programmazione con formule complesse, tabelle pivot e macro. Inoltre, ho implementato soluzioni in Microsoft Access, progettando database relazionali e moduli personalizzati che hanno migliorato la gestione delle informazioni e il flusso di lavoro in diversi contesti organizzativi.",
+    
+    "title2": "Tecnico Superiore in Sviluppo Web",
+    "institution2": "Indra",
+    "desc2": "Ho sviluppato applicazioni in Java, partecipando a diversi progetti che hanno richiesto logica di programmazione e integrazione con database come MySQL. Questi sviluppi hanno incluso applicazioni desktop e soluzioni web, incorporando pratiche di programmazione orientata agli oggetti e strutture efficienti per la gestione dei dati. Come parte del mio approccio alla modernizzazione e al deployment del software, ho lavorato con Docker per la gestione dei container, creando ambienti di sviluppo coerenti, facilitando l'implementazione delle applicazioni e migliorando la scalabilità dei progetti. Inoltre, ho acquisito esperienza nella progettazione di interfacce utente utilizzando strumenti come Figma, collaborando alla creazione di prototipi visivi e migliorando l'esperienza utente nei prodotti sviluppati. Parallelamente, ho approfondito JavaScript, ampliando le mie conoscenze nella programmazione web dinamica e nell'interazione con il DOM. Ho anche imparato e applicato il linguaggio PHP, lavorando con framework e librerie come Laravel, Bootstrap e AngularJS, che mi hanno permesso di sviluppare applicazioni web robuste, con strutture modulari, design responsivo e funzionalità avanzate sia nel frontend che nel backend."
+    },
+
+    "contact": {
+    "title": "Contatto",
+    "email": "Email",
+    "message": "Messaggio"
+    },
+    
+    "footer": {
+    "copyright": "© 2025 Iván Naranjo Broceño. Tutti i diritti riservati."
+    }
+}

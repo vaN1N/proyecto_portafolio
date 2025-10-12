@@ -1,9 +1,11 @@
-
-//Funcionalidad para cambiar el tema
-const toggleBtn = document.getElementById("themeToggle");
-    const body = document.body;
-    
-    toggleBtn.addEventListener("click", () => {
-    const isDark = body.getAttribute("data-bs-theme") === "dark";
-    body.setAttribute("data-bs-theme", isDark ? "light" : "dark");
-});
+document.addEventListener("DOMContentLoaded", function () {
+    const toggleBtn = document.getElementById("toggleBtn");
+    if (toggleBtn) {
+      toggleBtn.addEventListener("click", function () {
+        // tu lógica aquí
+      });
+    } else {
+      console.warn("No se encontró el botón con id 'toggleBtn'");
+    }
+  });
+  

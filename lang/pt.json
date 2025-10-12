@@ -1,0 +1,64 @@
+{
+    "header": {
+    "name": "Iván Naranjo Broceño",
+    "role": "Desenvolvedor Web",
+    "location": "Ciudad Real, Espanha",
+    "email": "ivnabro@gmail.com"
+    },
+
+    "nav": {
+    "about": "Sobre mim",
+    "experience": "Experiência",
+    "skills": "Competências",
+    "projects": "Projetos",
+    "contact": "Contato"
+    },
+
+    "about": {
+    "title": "Sobre mim",
+    "description": "Desenvolvedor web altamente motivado, com forte compromisso com o aprendizado contínuo e habilidades sólidas em design de interfaces, desenvolvimento e manutenção de sites. Demonstra capacidade de trabalhar de forma eficaz tanto de forma independente quanto em ambientes colaborativos, entregando soluções de alta qualidade que atendem e superam as expectativas dos clientes. Apaixonado por estar atualizado com as últimas tecnologias e melhorar continuamente suas habilidades técnicas."
+    },
+
+    "key": {
+    "skill": "Competências-chave"
+    },
+
+    "experience": {
+    "title": "Experiência",
+    "job1_title": "Técnico em Sistemas Microinformáticos e Redes",
+    "job1_period": "2022 - 2024",
+    "job1_desc": "Criei e gerenciei plataformas educacionais no Moodle, projetando e personalizando cursos conforme as necessidades dos usuários. Desenvolvi sites usando HTML5, CSS e JavaScript, integrando conteúdo interativo e funcional. Também criei planilhas no Excel com lógica de programação para automatizar processos e implementei soluções no Access para otimizar a gestão da informação.",
+    
+    "job2_title": "Técnico Superior em Desenvolvimento Web",
+    "job2_period": "2024 - 2026 (Em andamento)",
+    "job2_desc": "Desenvolvi programas em Java, realizando projetos com bancos de dados como MySQL e gerenciamento de contêineres com Docker. Ganhei experiência em design de interfaces com Figma, aprofundei meus conhecimentos em JavaScript e aprendi PHP, trabalhando com frameworks e bibliotecas como Bootstrap, AngularJS e Laravel."
+    },
+
+    "projects": {
+    "title": "Projetos",
+    "project1_title": "Projeto Pessoal - Portfólio",
+    "project1_desc": "Criei um site pessoal para mostrar minha experiência profissional em detalhes."
+    },
+
+    "detailed_experience": {
+    "title": "Funções e Desenvolvimentos",
+    "intro": "Nesta seção, falarei em detalhes sobre as funções e desenvolvimentos que realizei ao longo da minha experiência profissional.",
+    "title1": "Técnico em Sistemas Microinformáticos e Redes",
+    "institution1": "Arcadie College",
+    "desc1": "Criei e gerenciei diversas plataformas educacionais usando Moodle, adaptando-as às necessidades específicas dos usuários. Isso incluiu o design, estruturação e personalização de cursos virtuais, bem como a configuração de atividades, recursos e avaliações que promovem uma experiência de aprendizagem dinâmica e eficaz. Paralelamente, desenvolvi sites com HTML5, CSS e JavaScript, integrando conteúdo interativo e funcional. Trabalhei na automação de processos administrativos com Excel avançado e implementei soluções no Access com bancos de dados relacionais e formulários personalizados.",
+
+    "title2": "Técnico Superior em Desenvolvimento Web",
+    "institution2": "Indra",
+    "desc2": "Desenvolvi aplicações em Java, participando de projetos que exigiram lógica de programação e integração com bancos de dados como MySQL. Trabalhei com Docker para gerenciar contêineres, facilitando a implementação e escalabilidade. Também adquiri experiência em design de interfaces com Figma, aprofundei meus conhecimentos em JavaScript e PHP, utilizando frameworks como Laravel, Bootstrap e AngularJS para desenvolver aplicações web robustas e responsivas."
+    },
+
+    "contact": {
+    "title": "Contato",
+    "email": "Email",
+    "message": "Mensagem"
+    },
+
+    "footer": {
+    "copyright": "© 2025 Iván Naranjo Broceño. Todos os direitos reservados."
+    }
+}

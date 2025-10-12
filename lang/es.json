@@ -1,0 +1,65 @@
+{
+    "header": {
+    "name": "Iván Naranjo Broceño",
+    "role": "Desarrollador Web",
+    "location": "Ciudad Real, España",
+    "email": "ivnabro@gmail.com"
+    },
+
+    "nav": {
+    "about": "Sobre mí",
+    "experience": "Experiencia",
+    "skills": "Skills",
+    "projects": "Proyectos",
+    "contact": "Contacto"
+    },
+
+    "about": {
+    "title": "Sobre mí",
+    "description": "Desarrollador web altamente motivado con un fuerte compromiso con el aprendizaje continuo y sólidas habilidades en el diseño de interfaces, desarrollo y mantenimiento de sitios web. Demuestra la capacidad de trabajar de manera efectiva tanto de forma independiente como en entornos colaborativos, entregando soluciones de alta calidad que cumplen y superan las expectativas del cliente. Apasionado por mantenerse al día con las últimas tecnologías y mejorar continuamente sus habilidades técnicas."
+    },
+
+    "key": {
+        "skill" : "Skills Claves"
+    }, 
+
+    "experience": {
+    "title": "Experiencia",
+    "job1_title": "Técnico de Sistemas Microinformáticos y Redes",
+    "job1_period": "2022 - 2024",
+    "job1_desc": "He creado y gestionado plataformas educativas en Moodle, diseñando y personalizando cursos según las necesidades de los usuarios. Además, he desarrollado páginas web utilizando HTML5, CSS y JavaScript, integrando contenido interactivo y funcional. También he diseñado hojas de cálculo en Excel aplicando lógica de programación para automatizar procesos, y he implementado soluciones de automatización en Access, optimizando la gestión y el flujo de información."
+                                ,
+    "job2_title": "Técnico Superior de Desarrollo Web",
+    "job2_period": "2024 - 2026 (En proceso)",
+    "job2_desc": "He desarollado programas en Java, realizando diversos proyectos que incluyen el uso de base ed datos como MySQL y la gestión de contenedores Docker. Además de estas tecnologías, he adquirido experiencia en diseño de interfaces con Figma, he profundizado en JavaScript y aprendido un nuevo lenguaje PHP, trabajando con framworks y liberías como Bootstrap, AngularJS y Laravel."
+    },
+
+    "projects": {
+    "title": "Proyectos",
+    "project1_title": "Proyecto Personal - Portafolio",
+    "project1_desc": "Creé un sitio web personal para mostrar mi experiencia profesional en detalle."
+    },
+
+    "detailed_experience": {
+        "title": "Roles y Desarrollos",
+        "intro": "En esta sección hablaré en detalle sobre los roles y desarrollos que he llevado a cabo a lo largo de mi experiencia profesional.",
+
+        "title1": "Técnico de Sistemas Microinformáticos y Redes",
+        "institution1": "Arcadie College",
+        "desc1": "He creado y gestionado diversas plataformas educativas utilizando Moodle, adaptándolas a las necesidades específicas de los usuarios. Esto ha incluido el diseño, estructuración y personalización de cursos virtuales, así como la configuración de actividades, recursos y evaluaciones que fomentan una experiencia de aprendizaje dinámica y efectiva. Mi enfoque ha estado orientado a mejorar la accesibilidad, la usabilidad y la interacción dentro del entorno educativo digital. En paralelo, he desarrollado sitios web empleando tecnologías como HTML5, CSS y JavaScript, integrando contenido interactivo y funcional que responde a los estándares actuales de diseño web. Estos proyectos han requerido una atención especial a la experiencia del usuario (UX), la adaptabilidad a dispositivos móviles y la optimización del rendimiento en navegadores modernos. También he trabajado en la automatización de procesos administrativos mediante el uso avanzado de Microsoft Excel, aplicando lógica de programación con fórmulas complejas, tablas dinámicas y macros para agilizar tareas repetitivas y mejorar la eficiencia operativa. Asimismo, he implementado soluciones en Microsoft Access, diseñando bases de datos relacionales y formularios personalizados que han permitido optimizar la gestión de información y mejorar el flujo de trabajo en distintos contextos organizativos.",
+
+        "title2" : "Técnico Superior de Desarrollo Web",
+        "institution2" : "Indra",
+        "desc2": "He desarrollado aplicaciones en Java, participando en diversos proyectos que han requerido tanto lógica de programación como integración con bases de datos como MySQL. Estos desarrollos han abarcado desde aplicaciones de escritorio hasta soluciones web, incorporando prácticas de programación orientada a objetos y estructuras eficientes para el manejo de datos. Como parte de mi enfoque en la modernización y despliegue de software, he trabajado con Docker para la gestión de contenedores, lo que me ha permitido crear entornos de desarrollo consistentes, facilitar la implementación de aplicaciones y mejorar la escalabilidad de los proyectos. Además, he adquirido experiencia en el diseño de interfaces de usuario utilizando herramientas como Figma, lo que me ha permitido colaborar en la creación de prototipos visuales y mejorar la experiencia del usuario en los productos desarrollados. Paralelamente, he profundizado en JavaScript, ampliando mis conocimientos en programación web dinámica y en la interacción con el DOM. También he aprendido y aplicado el lenguaje PHP, trabajando con frameworks y librerías como Laravel, Bootstrap y AngularJS, lo que me ha permitido desarrollar aplicaciones web robustas, con estructuras modulares, diseño responsivo y funcionalidades avanzadas tanto en el frontend como en el backend."
+    }, 
+
+    "contact": {
+    "title": "Contacto",
+    "email": "Email",
+    "message": "Mensaje"
+    },
+
+    "footer": {
+    "copyright": "© 2025 Iván Naranjo Broceño. Todos los derechos reservados."
+    }
+}
