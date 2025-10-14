@@ -227,7 +227,7 @@
                             });
 
 
-                        // 🔁 Función para aplicar el idioma seleccionado
+                        // Función para aplicar el idioma seleccionado
                             function applyLanguage(lang) {
                                 // Carga el archivo JSON correspondiente al idioma
                                 fetch(`./lang/${lang}.json`)
@@ -253,13 +253,13 @@
                                     .catch(error => console.error('Error al cargar el idioma:', error));
                             }
 
-                            // 🌐 Mostrar/Ocultar el menú de idiomas al hacer clic en el botón
+                            // Mostrar/Ocultar el menú de idiomas al hacer clic en el botón
                             document.getElementById('lang-btn').addEventListener('click', () => {
                                 const menu = document.getElementById('lang-menu');
                                 menu.classList.toggle('hidden');
                             });
 
-                            // 🌍 Cambiar idioma al hacer clic en un botón del menú
+                            // Cambiar idioma al hacer clic en un botón del menú
                             document.querySelectorAll('#lang-menu button').forEach(btn => {
                                 btn.addEventListener('click', () => {
                                     const selectedLang = btn.getAttribute('data-lang');
@@ -268,7 +268,7 @@
                                 });
                             });
 
-                            // 🚀 Aplicar idioma guardado al cargar la página (cuando se hace clic en un elemento específico)
+                            //Aplicar idioma guardado al cargar la página (cuando se hace clic en un elemento específico)
                             document.addEventListener("DOMContentLoaded", function () {
                                 const elemento = document.getElementById("tuId"); // Este ID debe ser el que activa el idioma
                                 if (elemento) {
@@ -279,7 +279,7 @@
                                 }
                             });
 
-                            // 🧪 Prueba de carga del archivo español (solo para depuración en consola)
+                            // Prueba de carga del archivo español (solo para depuración en consola)
                             fetch('./lang/es.json')
                                 .then(res => res.json())
                                 .then(data => console.log(data))
