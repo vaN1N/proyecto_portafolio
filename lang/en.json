@@ -40,19 +40,6 @@
     "project1_desc": "I created a personal website to showcase my professional experience in detail."
     },
 
-    "detailed_experience": {
-        "title": "Roles and Development",
-        "intro": "In this section, I will discuss in detail the roles and developments I have carried out throughout my professional experience.",
-
-            "title1": "Technician in Microcomputer Systems and Networks",
-            "institution1": "Arcadie College",
-            "desc1": "I have created and managed various educational platforms using Moodle, adapting them to users' specific needs. This included designing, structuring, and customizing virtual courses, as well as configuring activities, resources, and assessments to foster a dynamic and effective learning experience. In parallel, I developed websites using HTML5, CSS, and JavaScript, integrating interactive and functional content. I also automated administrative processes using advanced Microsoft Excel techniques and implemented relational databases and custom forms in Microsoft Access.",
-
-            "title2": "Senior Web Development Technician",
-            "institution2": "Indra",
-            "desc2": "I developed Java applications, participating in projects that required programming logic and database integration with MySQL. I worked with Docker to manage containers, improving deployment and scalability. I designed user interfaces with Figma and collaborated on visual prototypes. I deepened my knowledge of JavaScript and PHP, using frameworks like Laravel, Bootstrap, and AngularJS to build robust, responsive web applications."
-    },
-
     "contact": {
     "title": "Contact",
     "email": "Email",

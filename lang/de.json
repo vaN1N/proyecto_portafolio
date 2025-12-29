@@ -40,18 +40,6 @@
     "project1_desc": "Ich habe eine persönliche Website erstellt, um meine berufliche Erfahrung im Detail zu präsentieren."
     },
 
-    "detailed_experience": {
-    "title": "Rollen und Entwicklungen",
-    "intro": "In diesem Abschnitt werde ich ausführlich über die Rollen und Entwicklungen sprechen, die ich im Laufe meiner beruflichen Laufbahn durchgeführt habe.",
-    "title1": "Techniker für Mikrocomputersysteme und Netzwerke",
-    "institution1": "Arcadie College",
-    "desc1": "Ich habe verschiedene Bildungsplattformen mit Moodle erstellt und verwaltet, sie an die spezifischen Bedürfnisse der Nutzer angepasst und virtuelle Kurse gestaltet und strukturiert. Ich habe Websites mit HTML5, CSS und JavaScript entwickelt und interaktive Inhalte integriert. Ich habe Prozesse mit Excel automatisiert und relationale Datenbanken sowie benutzerdefinierte Formulare in Access implementiert.",
-    
-    "title2": "Fachinformatiker für Webentwicklung",
-    "institution2": "Indra",
-    "desc2": "Ich habe Java-Anwendungen entwickelt und an Projekten gearbeitet, die Programmierlogik und Datenbankintegration mit MySQL erforderten. Ich habe Docker zur Verwaltung von Containern verwendet, Benutzeroberflächen mit Figma entworfen und meine Kenntnisse in JavaScript und PHP vertieft. Ich habe mit Frameworks wie Laravel, Bootstrap und AngularJS gearbeitet, um robuste und responsive Webanwendungen zu entwickeln."
-    },
-
     "contact": {
     "title": "Kontakt",
     "email": "E-Mail",

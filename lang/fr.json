@@ -40,20 +40,6 @@
     "project1_desc": "J'ai créé un site web personnel pour présenter en détail mon expérience professionnelle."
     },
 
-    "detailed_experience": {
-        "title": "Rôles et Développement",
-        "intro": "Dans cette section, je parlerai en détail des rôles et des projets que j'ai réalisés tout au long de mon parcours professionnel.",
-
-            "title1": "Technicien en systèmes micro-informatiques et réseaux",
-            "institution1": "Arcadie College",
-            "desc1": "J'ai créé et géré diverses plateformes éducatives avec Moodle, en les adaptant aux besoins spécifiques des utilisateurs. Cela comprenait la conception, la structuration et la personnalisation de cours virtuels, ainsi que la configuration d'activités, de ressources et d'évaluations pour favoriser une expérience d'apprentissage dynamique et efficace. En parallèle, j'ai développé des sites web avec HTML5, CSS et JavaScript, intégrant du contenu interactif et fonctionnel. J'ai également automatisé des processus administratifs avec Microsoft Excel et conçu des bases de données relationnelles et des formulaires personnalisés avec Microsoft Access.",
-
-            "title2": "Technicien supérieur en développement web",
-            "institution2": "Indra",
-            "desc2": "J'ai développé des applications en Java, participant à des projets nécessitant une logique de programmation et une intégration avec des bases de données comme MySQL. J'ai utilisé Docker pour gérer les conteneurs, facilitant le déploiement et améliorant l'évolutivité. J'ai conçu des interfaces utilisateur avec Figma et collaboré à la création de prototypes visuels. J'ai approfondi mes connaissances en JavaScript et PHP, en utilisant des frameworks comme Laravel, Bootstrap et AngularJS pour développer des applications web robustes et réactives."
-
-    },
-
     "contact": {
     "title": "Contact",
     "email": "Email",

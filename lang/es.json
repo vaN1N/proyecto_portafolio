@@ -40,19 +40,6 @@
     "project1_desc": "Creé un sitio web personal para mostrar mi experiencia profesional en detalle."
     },
 
-    "detailed_experience": {
-        "title": "Roles y Desarrollos",
-        "intro": "En esta sección hablaré en detalle sobre los roles y desarrollos que he llevado a cabo a lo largo de mi experiencia profesional.",
-
-        "title1": "Técnico de Sistemas Microinformáticos y Redes",
-        "institution1": "Arcadie College",
-        "desc1": "He creado y gestionado diversas plataformas educativas utilizando Moodle, adaptándolas a las necesidades específicas de los usuarios. Esto ha incluido el diseño, estructuración y personalización de cursos virtuales, así como la configuración de actividades, recursos y evaluaciones que fomentan una experiencia de aprendizaje dinámica y efectiva. Mi enfoque ha estado orientado a mejorar la accesibilidad, la usabilidad y la interacción dentro del entorno educativo digital. En paralelo, he desarrollado sitios web empleando tecnologías como HTML5, CSS y JavaScript, integrando contenido interactivo y funcional que responde a los estándares actuales de diseño web. Estos proyectos han requerido una atención especial a la experiencia del usuario (UX), la adaptabilidad a dispositivos móviles y la optimización del rendimiento en navegadores modernos. También he trabajado en la automatización de procesos administrativos mediante el uso avanzado de Microsoft Excel, aplicando lógica de programación con fórmulas complejas, tablas dinámicas y macros para agilizar tareas repetitivas y mejorar la eficiencia operativa. Asimismo, he implementado soluciones en Microsoft Access, diseñando bases de datos relacionales y formularios personalizados que han permitido optimizar la gestión de información y mejorar el flujo de trabajo en distintos contextos organizativos.",
-
-        "title2" : "Técnico Superior de Desarrollo Web",
-        "institution2" : "Indra",
-        "desc2": "He desarrollado aplicaciones en Java, participando en diversos proyectos que han requerido tanto lógica de programación como integración con bases de datos como MySQL. Estos desarrollos han abarcado desde aplicaciones de escritorio hasta soluciones web, incorporando prácticas de programación orientada a objetos y estructuras eficientes para el manejo de datos. Como parte de mi enfoque en la modernización y despliegue de software, he trabajado con Docker para la gestión de contenedores, lo que me ha permitido crear entornos de desarrollo consistentes, facilitar la implementación de aplicaciones y mejorar la escalabilidad de los proyectos. Además, he adquirido experiencia en el diseño de interfaces de usuario utilizando herramientas como Figma, lo que me ha permitido colaborar en la creación de prototipos visuales y mejorar la experiencia del usuario en los productos desarrollados. Paralelamente, he profundizado en JavaScript, ampliando mis conocimientos en programación web dinámica y en la interacción con el DOM. También he aprendido y aplicado el lenguaje PHP, trabajando con frameworks y librerías como Laravel, Bootstrap y AngularJS, lo que me ha permitido desarrollar aplicaciones web robustas, con estructuras modulares, diseño responsivo y funcionalidades avanzadas tanto en el frontend como en el backend."
-    }, 
-
     "contact": {
     "title": "Contacto",
     "email": "Email",
